@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Build the Building</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="Button_Chop">Chop trees</string>
+    <string name="Button_Mine">Mine Ore</string>
+    <string name="Button_Dig">Dig Sand</string>
+    <string name="Button_Build">BUILD</string>
+
+</resources>

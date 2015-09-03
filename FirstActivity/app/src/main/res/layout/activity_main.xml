@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="horizontal"
+    android:background="@color/red"
+    tools:context=".MainActivity"
+    android:id="@+id/Layout">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Button_Mine"
+        android:textSize="15sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="50dp"
+        android:onClick="onMineOreClick"
+        android:id="@+id/MineOreButton"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Button_Chop"
+        android:textSize="15sp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/MineOreButton"
+        android:layout_alignParentRight="true"
+        android:onClick="onChopWoodClick"
+        android:id="@+id/ChopWoodButton"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Button_Dig"
+        android:textSize="15sp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/ChopWoodButton"
+        android:layout_alignParentRight="true"
+        android:onClick="onDigSandClick"
+        android:id="@+id/DigSandButton"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="@string/Button_Build"
+        android:onClick="onBuildClick"
+        android:id="@+id/BuildButton"/>
+    <TextView
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/DigSandButton"
+        android:text="Resources Gathered:"
+        android:id="@+id/ResourcesGathered"/>
+        <TextView
+            android:layout_margin="15dp"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ResourcesGathered"
+            android:text="Ore: 0/5"
+            android:id="@+id/OreGathered"/>
+        <TextView
+            android:layout_margin="15dp"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ResourcesGathered"
+            android:layout_toRightOf="@+id/OreGathered"
+            android:text="Wood: 0/5"
+            android:id="@+id/WoodGathered"/>
+
+        <TextView
+            android:layout_margin="15dp"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ResourcesGathered"
+            android:layout_toRightOf="@+id/WoodGathered"
+            android:text="Sand: 0/5"
+            android:id="@+id/SandGathered"/>
+
+
+
+    <!--<TextView-->
+        <!--android:layout_weight="1"-->
+        <!--android:text="More random texts"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content" />-->
+
+</RelativeLayout>
